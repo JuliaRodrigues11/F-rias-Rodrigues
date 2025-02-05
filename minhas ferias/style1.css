@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6539dd;
+    text-align: center;
+}
+
+header {
+    background-color: hwb(281 14% 14%);
+    color: #000000;
+    padding: 20px;
+    font-size: 24px;
+    
+ }
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ea9df1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(248, 35, 255);
+ }
+
+h2{
+    color: #000000;
+ }
+ img{
+    width: 450px;
+    height: 450px;
+ }
+button {
+    background-color: hwb(293 24% 0%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+ }
+
+button:hover {
+    background-color: hwb(281 0% 30%);
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+          }
+          
+          .pic-ctn {
+            width: 100vw;
+            height: 200px;
+          }
+          
+          @keyframes display {
+            0% {
+              transform: translateX(200px);
+              opacity: 0;
+            }
+            10% {
+              transform: translateX(0);
+              opacity: 1;
+            }
+            20% {
+              transform: translateX(0);
+              opacity: 1;
+            }
+            30% {
+              transform: translateX(-200px);
+              opacity: 0;
+            }
+            100% {
+              transform: translateX(-200px);
+              opacity: 0;
+            }
+          }
+          
+          .pic-ctn {
+            position: relative;
+            width: 100vw;
+            height: 300px;
+            margin-top: 15vh;
+          }
+          
+          .pic-ctn > img {
+            position: absolute;
+            top: 0;
+            left: calc(50% - 100px);
+            opacity: 0;
+            animation: display 10s infinite;
+          }
+          
+          img:nth-child(2) {
+            animation-delay: 2s;
+          }
+          img:nth-child(3) {
+            animation-delay: 4s;
+          }
+          img:nth-child(4) {
+            animation-delay: 6s;
+          }
+          img:nth-child(5) {
+            animation-delay: 8s;
+          }
